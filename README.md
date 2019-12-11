@@ -1,1 +1,1 @@
-#Udemy Typescript Patterns
+# Udemy Typescript Patterns
