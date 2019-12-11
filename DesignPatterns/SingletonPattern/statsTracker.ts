@@ -12,6 +12,7 @@ export class StatsTracker {
     StatsTracker._instance = this;
   }
 
+  // This initializes the only instance of the class. Because it's private and static, it can't be accessed outside of the class
   private static _instance: StatsTracker = new StatsTracker();
 
   public static get instance(): StatsTracker {

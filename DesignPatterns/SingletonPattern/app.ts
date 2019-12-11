@@ -17,3 +17,6 @@ tracker.widgetViews++;
 tracker.twitterShares += 2;
 
 test();
+
+// this won't be allowed
+let tracker2 = new StatsTracker();
