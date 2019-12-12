@@ -4,7 +4,7 @@
     "experimentalDecorators": true,
     "module": "commonjs",
     "lib": ["es6", "dom"],
-    "types": ["reflect-metadata", "node"],
+    "types": ["reflect-metadata"],
     "esModuleInterop": true,
     "emitDecoratorMetadata": true
   }
