@@ -4,8 +4,9 @@
     "experimentalDecorators": true,
     "module": "commonjs",
     "lib": ["es6", "dom"],
-    "types": ["reflect-metadata"],
+    "types": ["reflect-metadata", "node"],
     "esModuleInterop": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "baseUrl": "."
   }
 }

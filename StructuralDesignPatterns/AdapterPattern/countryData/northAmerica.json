@@ -1,0 +1,17 @@
+[
+  {
+    "name": "USA",
+    "capital": "Washington, D.C.",
+    "currency": "USD"
+  },
+  {
+    "name": "Candada",
+    "capital": "Ottowa",
+    "currency": "CAD"
+  },
+  {
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "currency": "MXN"
+  }
+]
