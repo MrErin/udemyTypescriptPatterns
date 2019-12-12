@@ -28,7 +28,20 @@ export function before(hook: Function) {
   };
 }
 
+export function capitalize() {
+  return function<T extends { new (...args: any[]): {} }>(constructor: T) {
+    return class extends constructor {
+      _a = 'A';
+      _b = 'B';
+    };
+  };
+}
+
+@capitalize()
 export class Whatever {
+  private _a: string = 'a';
+  private _b: string = 'b';
+
   // @disable
   foo() {
     console.log('foo');
@@ -41,8 +54,13 @@ export class Whatever {
   bar() {
     console.log('bar');
   }
+
+  baz() {
+    console.log(this._a, this._b);
+  }
 }
 
 let whatever = new Whatever();
 whatever.foo();
 whatever.bar();
+whatever.baz();
